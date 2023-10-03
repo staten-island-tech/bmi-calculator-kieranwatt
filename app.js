@@ -20,7 +20,7 @@ test(70+30)
 let a = Number(prompt("enter number"));
 let b = Number(prompt("enter number")); 
 add(a,b); */
-function add(x, y) {
+/* function add(x, y) {
     //creates an output
     return x + y;
 }
@@ -29,4 +29,10 @@ function calc(){
     const sum = add(45, 34);
 console.log(sum);
 }
-calc();
+calc(); */
+function BMIcalc(uheight, uweight); {
+    return(uweight / ((uheight*uheight) / 100))
+}
+let uweight = Number(prompt("enter number"))
+let uheight = Number(prompt("enter number"))
+   
