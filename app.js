@@ -1,9 +1,19 @@
-let uweight = Number(prompt("enter number"));
-let uheight = Number(prompt("enter number"));
-function BMIcalc(uheight, uweight); {
-    const BMI = ((uweight / (uheight)(uheight))*10000);
-    return BMI;
+// let uname = prompt("enter name");
+// let uweight = Number(prompt("enter number"));
+// let uheight = Number(prompt("enter number"));
+// function BMI() {
+//     return((uweight / (uheight / 100)));
+// }
+// const bmi = BMI();
+
+// console.log(bmi);
+
+let uname = prompt("Enter Name");
+let uweight = Number(prompt("Enter weight in kg"));
+let uheight = Number(prompt("Enter height in Meters"));
+function BMI() {
+    return((uweight / (uheight / 100)));
 }
-const uweight = String(prompt("Please enter weight"));
-const uheight = String(prompt("Please enter height"));
-const BMI = BMIcalc(uheight, uweight);
+const bmi = BMI();
+
+console.log(bmi);
