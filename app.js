@@ -10,10 +10,16 @@
 
 let uname = prompt("Enter Name");
 let uweight = Number(prompt("Enter weight in kg"));
-let uheight = Number(prompt("Enter height in Meters"));
+let uheight = Number(prompt("Enter height in Centimeters"));
 function BMI() {
-    return((uweight / (uheight / 100)));
+    return((uweight / (uheight*uheight)));
 }
 const bmi = BMI();
 
 console.log(bmi);
+
+/* function comparebmi(){
+function brownies(){
+
+}
+} */
