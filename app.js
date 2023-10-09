@@ -1,23 +1,3 @@
-// let uname = prompt("enter name");
-// let uweight = Number(prompt("enter number"));
-// let uheight = Number(prompt("enter number"));
-// function BMI() {
-//     return((uweight / (uheight / 100)));
-// }
-// const bmi = BMI();
-
-// console.log(bmi);
-
-/* let uname = prompt("Enter Name");
-let uweight = Number(prompt("Enter weight in kg"));
-let uheight = Number(prompt("Enter height in Centimeters"));
-function BMI() {
-    return((uweight / (uheight*uheight)));
-}
-const bmi = BMI();
-
-console.log(bmi); */
-
 let uname = prompt("Enter Name");
 let uweight = Number(prompt("Enter weight in kg"));
 let uheight = Number(prompt("Enter height in Centimeters"));
@@ -28,8 +8,21 @@ const bmi = BMI();
 
 console.log(bmi);
 
-/* function comparebmi(){
-function brownies(){
-
+function BMIrange(bmi){
+    if(bmi <= 18.5){
+        return " Underweight";
+    }
+    else if(bmi >=30){
+        return " Obese";
+    }
+    else if(bmi >=18.5 && bmi <=24.9999){
+        return " Healthy";
+    }
+    else if(bmi <=29.999 && bmi >=25){
+        return " Overweight";
+    }
+    else{
+        return "error";
+    }
 }
-} */
+console.log("hello," + uname +" Your BMI is:" + bmi + BMIrange(bmi))
