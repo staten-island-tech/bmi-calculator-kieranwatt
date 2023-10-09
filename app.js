@@ -8,11 +8,21 @@
 
 // console.log(bmi);
 
-let uname = prompt("Enter Name");
+/* let uname = prompt("Enter Name");
 let uweight = Number(prompt("Enter weight in kg"));
 let uheight = Number(prompt("Enter height in Centimeters"));
 function BMI() {
     return((uweight / (uheight*uheight)));
+}
+const bmi = BMI();
+
+console.log(bmi); */
+
+let uname = prompt("Enter Name");
+let uweight = Number(prompt("Enter weight in kg"));
+let uheight = Number(prompt("Enter height in Centimeters"));
+function BMI() {
+    return(uweight / (Math.pow((uheight / 100), 2)));
 }
 const bmi = BMI();
 
